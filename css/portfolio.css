@@ -148,6 +148,12 @@ main {
     text-align: center;
 }
 
+.social img {
+    align-items: center;
+    margin: 30px auto;
+    display: block;
+}
+
 .contact-us-form {
     text-align: center;
     margin-left: auto;
