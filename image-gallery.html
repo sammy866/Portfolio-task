@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Our Services - Balloons Ltd.</title>
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio</h1>
+      <ul class="navigation">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="image-gallery.html">Images</a>
+        </li>
+        <li>
+          <a href="canvas.html">Canvas</a>
+        </li>
+        <li>
+          <a href="transition.html">CSS Animations / Transitions</a>
+        </li>
+        <li>
+          <a href="geolocation.html">Geolocation API</a>
+        </li>
+        <li>
+          <a href="contact-us.html">Contact-Us</a>
+        </li>
+      </ul>
+    </header>
+    <div class="images">
+      <div class="img-container">
+        <img id="imageBox" src="img/img1.jpg" alt="" />
+      </div>
+      <div class="small-images">
+        <img src="img/img1.jpg" alt="" onclick="changeImg(this)" />
+        <img src="img/img2.jpg" alt="" onclick="changeImg(this)" />
+        <img src="img/img3.jpg" alt="" onclick="changeImg(this)" />
+        <img src="img/img4.jpg" alt="" onclick="changeImg(this)" />
+        <img src="img/img5.jpg" alt="" onclick="changeImg(this)" />
+      </div>
+      <a href="https://www.pexels.com">All stock images provided from Pexels</a>
+    </div>
+    <div class="short-text">
+      <h2>Requirements</h2>
+      <br />
+      <h3>
+        A JavaScript powered image gallery that: <br />
+        <li>Displays thumbnails of at least 4 images</li>
+        <li>
+          allows the user to click on a thumbnail to view the full-size version
+          of the image, without leaving the page
+        </li>
+        <br />
+        <h2>What the function does</h2>
+        <h3>
+          When the user hovers over the small image, the image scales by 1.2x.
+          <br /><br />
+          When the user clicks the small image it changes the large image
+          according to what small image was clicked. <br />
+        </h3>
+      </h3>
+    </div>
+    <script>
+      function changeImg(smallImg) {
+        var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+      }
+    </script>
+  </body>
+</html>
