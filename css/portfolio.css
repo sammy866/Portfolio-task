@@ -315,5 +315,11 @@ main {
     height: 180px;
 }
 
+#albums {
+    background-color: gray;
+    color: #000;
+    text-align: center;
+}
+
 
 
