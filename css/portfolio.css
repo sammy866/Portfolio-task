@@ -71,13 +71,14 @@ header h1{
 .navigation {
     list-style-type: none;
     padding: 0;
-    margin-left: 600px;
+    margin-left: 500px;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
 .navigation li {
     display: inline-block;
+    font-size: 15px;
 }
 
 .navigation a {
