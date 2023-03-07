@@ -185,7 +185,7 @@ header h1{
 
 @media only screen and (max-width: 400px) {
     .video iframe {
-        width: 95%;
+        width: auto;
         height: auto;
     }
 }
@@ -291,7 +291,7 @@ header h1{
     color: white;
 }
 
-#myCanvas {
+#canvas {
     border: 1px solid #000;
     background-color: white;
     display: block;
@@ -299,7 +299,7 @@ header h1{
 }
 
 @media only screen and (max-width: 390px) {
-    #myCanvas {
+    #canvas {
         width: 350px;
         height: 350px;
         margin-top: 40px;
