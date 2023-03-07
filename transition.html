@@ -42,14 +42,16 @@
         </li>
       </ul>
     </header>
-    <h4 class="size-increase">Hover to increase size</h4>
-    <div class="color-change">Change my text color</div>
-    <div class="color-button">
-      <button onclick="changeColor('blue')">Blue</button>
-      <button onclick="changeColor('red')">Red</button>
-      <button onclick="changeColor('green')">Green</button>
-    </div>
-    <div class="square">Im moving</div>
+    <main>
+      <h4 class="size-increase">Hover to increase size</h4>
+      <div class="color-change">Change my text color</div>
+      <div class="color-button">
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('green')">Green</button>
+      </div>
+      <div class="square">Im moving</div>
+    </main>
     <script>
       function changeColor(color) {
         document.querySelector(".color-change").style.color = color;

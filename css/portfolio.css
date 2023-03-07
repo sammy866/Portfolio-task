@@ -68,6 +68,12 @@ header h1{
     margin: 0px;
 }
 
+@media only screen and (max-width: 400px) {
+    header {
+        display: block;
+        width: 390px;
+    }}
+
 .navigation {
     list-style-type: none;
     padding: 0;
@@ -95,7 +101,16 @@ header h1{
     padding: 0.5em;
 }
 
-main {
+@media only screen and (max-width: 400px) {
+    .navigation {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.main-home {
     display: flex;
     justify-content: space-between;
 }
@@ -131,6 +146,19 @@ main {
     border: 1px solid white;
 }
 
+@media only screen and (max-width: 400px) {
+    .left {
+        margin-left: -13px;
+        text-align: center;
+        width: 400px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .main-home {
+        display: block;
+    }
+}
+
 .description {
     background-color: #c9c9c9;
     border-radius: 10px;
@@ -144,15 +172,36 @@ main {
     color: gray;
 }
 
+@media only screen and (max-width: 400px) {
+    .description {
+        width: 350px;
+        
+    }
+}
+
 .video {
     margin-top: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .social img {
     align-items: center;
     margin: 30px auto;
     display: block;
+}
+
+@media only screen and (max-width: 400px) {
+    .social img {
+        width: 50%;
+        height: auto;
+    }
 }
 
 .contact-us-form {
