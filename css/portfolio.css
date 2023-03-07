@@ -68,7 +68,7 @@ header h1{
     margin: 0px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
     header {
         display: block;
         width: 390px;
@@ -77,7 +77,7 @@ header h1{
 .navigation {
     list-style-type: none;
     padding: 0;
-    margin-left: 500px;
+    margin-left: auto;
     margin-top: 5px;
     margin-bottom: 0px;
 }
@@ -101,7 +101,7 @@ header h1{
     padding: 0.5em;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
     .navigation {
         margin-left: 0px;
         display: flex;
@@ -146,11 +146,11 @@ header h1{
     border: 1px solid white;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
     .left {
         margin-left: -13px;
         text-align: center;
-        width: 400px;
+        width: 390px;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -172,10 +172,9 @@ header h1{
     color: gray;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
     .description {
         width: 350px;
-        
     }
 }
 
@@ -186,7 +185,7 @@ header h1{
 
 @media only screen and (max-width: 400px) {
     .video iframe {
-        width: 100%;
+        width: 95%;
         height: auto;
     }
 }
@@ -197,7 +196,7 @@ header h1{
     display: block;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
     .social img {
         width: 50%;
         height: auto;
@@ -225,6 +224,22 @@ header h1{
     width: 400px;
     padding: 10px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 390px) {
+    .contact-us-form {
+        width: 300px;
+        padding: 10px;
+        height: 380px;
+    }
+    #fname, #lname, #email, #message {
+        width: 250px;
+        margin-bottom: 25px;
+        height: 25px;
+    }
+    .btn {
+        width: 250px;
+    }
 }
 
 .images {
@@ -283,6 +298,14 @@ header h1{
     margin: auto;
 }
 
+@media only screen and (max-width: 390px) {
+    #myCanvas {
+        width: 350px;
+        height: 350px;
+        margin-top: 40px;
+    }
+}
+
 .size-increase {
     text-align: center;
     transition: 0.5s;
@@ -326,13 +349,24 @@ header h1{
     animation: move 5s linear 0s infinite;
   }
   
-  @keyframes move {
+@keyframes move {
     0%   {background-color:red; left:-200px; top:0px; opacity: 0%;}
     25%  {background-color:yellow; left:200px; top:0px;}
     50%  {background-color:blue; left:200px; top:200px; opacity: 100%;}
     75%  {background-color:green; left:-200px; top:200px;}
     100% {background-color:red; left:-200px; top:0px; opacity: 0%;}
-  }
+}
+
+@media only screen and (max-width: 400px) {
+    @keyframes move {
+        0%   {background-color:red; left:-100px; top:0px; opacity: 0%;}
+        25%  {background-color:yellow; left:100px; top:0px;}
+        50%  {background-color:blue; left:100px; top:100px; opacity: 100%;}
+        75%  {background-color:green; left:-100px; top:100px;}
+        100% {background-color:red; left:-100px; top:0px; opacity: 0%;}
+    }
+}
+
 
 .geo {
     background-color: grey;
@@ -362,6 +396,12 @@ header h1{
 
 #maps {
     height: 180px;
+}
+
+@media only screen and (max-width: 390px) {
+    .geo {
+        width: 350px;
+    }
 }
 
 #albums {
