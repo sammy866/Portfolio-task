@@ -485,6 +485,20 @@ header h1{
     grid-template-areas: "name name" "age roll" "button button";
 }
 
+@media only screen and (max-width: 390px) {
+    #studentForm input {
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    input#name {
+        width: 250px;
+        
+    }
+}
+
 #studentForm * {
   margin: 5px;
   padding: 7px;
@@ -520,7 +534,7 @@ header h1{
   justify-content: space-around;
   align-items: center;
   border: 2px solid gray;
-  background-color: #ebebeb;
+  background-color: #b1c22d;
   color: #2f2f2f;
   border-radius: 15px;
 }
