@@ -8,10 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
-    <title>About-Us</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
@@ -21,10 +25,10 @@
           <a href="index.html">Home</a>
         </li>
         <!--
-        <li>
-          <a href="image-gallery.html">Images</a>
-        </li>
-        -->
+          <li>
+            <a href="image-gallery.html">Images</a>
+          </li>
+          -->
         <li>
           <a href="canvas.html">Canvas</a>
         </li>
@@ -46,8 +50,14 @@
       </ul>
     </header>
     <main>
-      <canvas id="canvas"></canvas>
+      <form id="studentForm">
+        <input type="text" placeholder="Student name" name="name" required />
+        <input type="text" placeholder="Student age" name="age" required />
+        <input type="text" placeholder="Student roll" name="roll" required />
+        <button>Add student</button>
+      </form>
+      <div class="students"></div>
     </main>
-    <script src="js/drawablecanvas.js"></script>
+    <script src="./js/studentForm.js"></script>
   </body>
 </html>

@@ -93,6 +93,7 @@ header h1{
     font-size: 1.2em;
     display: block;
     padding: 1em 0.75em;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
@@ -107,6 +108,20 @@ header h1{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 846px) and (min-width: 391px) {
+    .navigation {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        display: block;
+        width: 846px;
     }
 }
 
@@ -159,6 +174,25 @@ header h1{
     }
 }
 
+@media only screen and (max-width: 846px) and (min-width: 391px) {
+    .left {
+        margin-left: 61px;
+        text-align: center;
+        width: 700px;
+        margin-right: 31px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: grid;
+    }
+    
+    .front-buttons{
+        width: auto;
+    }
+
+    .main-home {
+        display: block;
+    }
+}
 .description {
     background-color: #c9c9c9;
     border-radius: 10px;
@@ -178,6 +212,13 @@ header h1{
     }
 }
 
+@media only screen and (max-width: 846px) and (min-width: 391px) {
+    .description{
+        width: 700px;
+        margin: 0em 3em;
+    }
+}
+
 .video {
     margin-top: 20px;
     text-align: center;
@@ -185,8 +226,16 @@ header h1{
 
 @media only screen and (max-width: 400px) {
     .video iframe {
-        width: auto;
+        width: 360px;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 846px) and (min-width: 391px) {
+    .video iframe{
+        width: 750px;
+        margin-left: 35px;
+        margin-right: auto;
     }
 }
 
@@ -408,6 +457,80 @@ header h1{
     background-color: gray;
     color: #000;
     text-align: center;
+}
+
+#studentForm input[name="name"] {
+    grid-area: name;
+}
+
+#studentForm input[name="age"] {
+    grid-area: age;
+}
+
+#studentForm input[name="roll"] {
+    grid-area: roll;
+}
+
+#studentForm button {
+    grid-area: button;
+}
+
+#studentForm {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "name name" "age roll" "button button";
+}
+
+#studentForm * {
+  margin: 7px;
+  padding: 7px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#studentForm button {
+  outline: none;
+  background-color: #d9e710;
+  color: rgb(0, 0, 0);
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+#studentForm input {
+  border: 3px solid #f7ef00;
+  outline: none;
+}
+
+#studentForm input:focus {
+  border: 3px solid #ebf60e;
+}
+
+#studentForm button:active {
+  border-color: #f2ff01;
+}
+
+.students {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid gray;
+  background-color: #ebebeb;
+  color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.students div {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.students div * {
+  margin: 5px;
 }
 
 
