@@ -280,6 +280,8 @@ header h1{
         width: 300px;
         padding: 10px;
         height: 380px;
+        text-align: center;
+        margin-left: 25px;
     }
     #fname, #lname, #email, #message {
         width: 250px;
@@ -484,7 +486,7 @@ header h1{
 }
 
 #studentForm * {
-  margin: 7px;
+  margin: 5px;
   padding: 7px;
   font-size: 1.1rem;
   border-radius: 10px;
