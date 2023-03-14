@@ -3,6 +3,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
 }
@@ -111,17 +115,17 @@ header h1{
     }
 }
 
-@media only screen and (max-width: 846px) and (min-width: 391px) {
+@media only screen and (max-width: 964px) and (min-width: 391px) {
     .navigation {
         margin-left: 0px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
     header {
         display: block;
-        width: 846px;
+        width: 1010px;
     }
 }
 
@@ -145,11 +149,27 @@ header h1{
     width: 400px;
 }
 
+.skills:hover, .contact:hover {
+    border-radius: 20px;
+    transition: .5s;
+    font-size: 17px;
+}
+
 .skills {
     padding: 10px;
     width: 150px;
     margin-right: 20px;
     background-color: yellow;
+}
+
+.skills a {
+    color: #000;
+    text-decoration: none;
+}
+
+.skills a:hover {
+    color: white;
+    transition: 1s;
 }
 
 .contact {
@@ -159,6 +179,16 @@ header h1{
     color: white;
     background-color: #000;
     border: 1px solid white;
+}
+
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: yellow;
+    transition: 1s;
 }
 
 @media only screen and (max-width: 390px) {
@@ -174,11 +204,11 @@ header h1{
     }
 }
 
-@media only screen and (max-width: 846px) and (min-width: 391px) {
+@media only screen and (max-width: 964px) and (min-width: 391px) {
     .left {
         margin-left: 61px;
         text-align: center;
-        width: 700px;
+        width: 850px;
         margin-right: 31px;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -212,10 +242,10 @@ header h1{
     }
 }
 
-@media only screen and (max-width: 846px) and (min-width: 391px) {
+@media only screen and (max-width: 964px) and (min-width: 391px) {
     .description{
-        width: 700px;
-        margin: 0em 3em;
+        width: 810px;
+        margin: 0em 4em;
     }
 }
 
@@ -229,26 +259,74 @@ header h1{
         width: 360px;
         height: auto;
     }
+
+    .video {
+        width: 370px;
+    }
 }
 
-@media only screen and (max-width: 846px) and (min-width: 391px) {
+@media only screen and (max-width: 964px) and (min-width: 391px) {
     .video iframe{
-        width: 750px;
+        width: 900px;
         margin-left: 35px;
         margin-right: auto;
     }
 }
 
-.social img {
+#skills img {
     align-items: center;
     margin: 30px auto;
-    display: block;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+#skills h1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 390px) {
-    .social img {
-        width: 50%;
-        height: auto;
+    #skills .row {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #skills {
+        width: 390px;
+    }
+
+    #skills img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 846px) and (min-width: 391px) {
+    #skills{
+        text-align: center;
+        width: 1000px;
+    }
+
+    #skills img {
+        width: 150px;
+    }
+
+    #skills .row {
+        width: 850px;
+        margin-left: 50px;
+        margin-right: auto;
     }
 }
 
