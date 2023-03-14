@@ -8,10 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
-    <title>Contact-Us</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
@@ -48,19 +52,38 @@
         </li>
       </ul>
     </header>
-    <main>
-      <h4 class="size-increase">Hover to increase size</h4>
-      <div class="color-change">Change my text color</div>
-      <div class="color-button">
-        <button onclick="changeColor('blue')">Blue</button>
-        <button onclick="changeColor('red')">Red</button>
-        <button onclick="changeColor('green')">Green</button>
-      </div>
-      <div class="square">Im moving</div>
-    </main>
+    <section class="random-number">
+      <h1>Random Number Generator</h1>
+      <p>Click the button below to see a random number generated</p>
+      <button onclick="startWorker()">Start</button>
+      <button onclick="stopWorker()">Stop</button>
+      <p><output id="result"></output></p>
+    </section>
     <script>
-      function changeColor(color) {
-        document.querySelector(".color-change").style.color = color;
+      var w;
+
+      function startWorker() {
+        if (typeof Worker !== "undefined") {
+          if (typeof w == "undefined") {
+            w = new Worker("js/number-generator.js");
+          }
+          w.onmessage = function (event) {
+            document.getElementById("result").innerHTML = event.data;
+          };
+        } else {
+          document.getElementById("result").innerHTML =
+            "Sorry! No Web Worker support.";
+        }
+        var codeBlock = document.getElementById("#result");
+        codeBlock.style.opacity = 0;
+        setTimeout(function () {
+          codeBlock.style.opacity = 1;
+        }, 1000);
+      }
+
+      function stopWorker() {
+        w.terminate();
+        w = undefined;
       }
     </script>
   </body>

@@ -627,5 +627,24 @@ header h1{
   margin: 5px;
 }
 
+.random-number {
+    text-align: center;
+    background-color: yellow;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.random-number #result {
+    font-size: 80px;
+}
+
+.random-number h1 {
+    color: #000;
+}
+
 
 
