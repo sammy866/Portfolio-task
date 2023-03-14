@@ -75,8 +75,9 @@ header h1{
 @media only screen and (max-width: 390px) {
     header {
         display: block;
-        width: 390px;
-    }}
+        
+    }
+}
 
 .navigation {
     list-style-type: none;
@@ -119,13 +120,20 @@ header h1{
     .navigation {
         margin-left: 0px;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
+        margin-right: auto;
     }
 
     header {
         display: block;
-        width: 1010px;
+    }
+
+    .navigation li {
+        width: max-content;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -206,17 +214,21 @@ header h1{
 
 @media only screen and (max-width: 964px) and (min-width: 391px) {
     .left {
-        margin-left: 61px;
+        margin-left: auto;
         text-align: center;
-        width: 850px;
-        margin-right: 31px;
+        margin-right: auto;
         margin-bottom: 20px;
         margin-top: 20px;
         display: grid;
+        width: auto;
     }
     
     .front-buttons{
         width: auto;
+    }
+
+    .skills, .contact {
+        width: 90px;
     }
 
     .main-home {
@@ -244,8 +256,9 @@ header h1{
 
 @media only screen and (max-width: 964px) and (min-width: 391px) {
     .description{
-        width: 810px;
-        margin: 0em 4em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 }
 
@@ -267,8 +280,9 @@ header h1{
 
 @media only screen and (max-width: 964px) and (min-width: 391px) {
     .video iframe{
-        width: 900px;
-        margin-left: 35px;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
         margin-right: auto;
     }
 }
@@ -313,19 +327,25 @@ header h1{
     }
 }
 
-@media only screen and (max-width: 846px) and (min-width: 391px) {
+@media only screen and (max-width: 964px) and (min-width: 391px) {
     #skills{
         text-align: center;
-        width: 1000px;
+        width: auto;
+        max-width: 80%;
+        min-width: 20%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #skills img {
-        width: 150px;
+        width: 80%;
+        max-width: 90px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #skills .row {
-        width: 850px;
-        margin-left: 50px;
+        margin-left: auto;
         margin-right: auto;
     }
 }
@@ -355,19 +375,34 @@ header h1{
 
 @media only screen and (max-width: 390px) {
     .contact-us-form {
-        width: 300px;
+        width: 80%;
         padding: 10px;
         height: 380px;
         text-align: center;
-        margin-left: 25px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #fname, #lname, #email, #message {
-        width: 250px;
+        width: 80%;
         margin-bottom: 25px;
         height: 25px;
     }
     .btn {
-        width: 250px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 964px) and (min-width: 391px) {
+    .contact-us-form {
+        width: 80%;
+    }
+
+    #fname, #lname, #email, #message {
+        width: 90%;
+    }
+
+    .btn {
+        width: 80%;
     }
 }
 
@@ -533,6 +568,12 @@ header h1{
     }
 }
 
+@media only screen and (max-width: 964px) and (min-width: 391px) {
+    .geo {
+        width: 80%;
+    }
+}
+
 #albums {
     background-color: gray;
     color: #000;
@@ -565,15 +606,20 @@ header h1{
 
 @media only screen and (max-width: 390px) {
     #studentForm input {
-        width: 130px;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
 
-    input#name {
-        width: 250px;
-        
+    
+}
+
+@media only screen and (max-width: 964px) and (min-width: 391px) {
+    #studentForm input {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -644,6 +690,22 @@ header h1{
 
 .random-number h1 {
     color: #000;
+}
+
+@media only screen and (max-width: 390px) {
+    .random-number {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 964px) and (min-width: 391px) {
+    .random-number {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
