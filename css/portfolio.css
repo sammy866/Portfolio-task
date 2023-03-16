@@ -480,47 +480,51 @@ header h1{
 .container {
     height: 100%;
     display: flex;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #toolbar {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 5px;
 }
 
-#toolbar, #drawing-board {
-    height: 100%;
-}
-
-#toolbar h1{
-    margin-left: -10px;
-    display: flex;
-    align-items: center;
-    margin-top: 0px;
+#toolbar h1 {
+    margin: 0;
+    margin-right: auto;
 }
 
 .settings {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px;
+}
+
+.settings #stroke {
+    width: 100%;
 }
 
 #toolbar label {
     font-size: 20px;
     padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
     width: fit-content;
     display: flex;
+    justify-content: flex-end;
 }
 
 #toolbar button {
     background-color: #1565c0;
     border: none;
     border-radius: 4px;
-    color:white;
+    color: white;
     padding: 2px;
+    margin-top: 5px;
 }
 
 .size-increase {
@@ -564,8 +568,8 @@ header h1{
     background-color: red;
     position: relative;
     animation: move 5s linear 0s infinite;
-  }
-  
+}
+
 @keyframes move {
     0%   {background-color:red; left:-200px; top:0px; opacity: 0%;}
     25%  {background-color:yellow; left:200px; top:0px;}
@@ -602,7 +606,7 @@ header h1{
     50%  {background-color:blue;}
     75%  {background-color:green;}
     100% {background-color:red;}
-  }
+}
 
 #googleMap {
     height: 400px;
@@ -677,53 +681,53 @@ header h1{
 }
 
 #studentForm * {
-  margin: 5px;
-  padding: 7px;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+    margin: 5px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 #studentForm button {
-  outline: none;
-  background-color: #d9e710;
-  color: rgb(0, 0, 0);
-  border: 5px solid transparent;
-  cursor: pointer;
+    outline: none;
+    background-color: #d9e710;
+    color: rgb(0, 0, 0);
+    border: 5px solid transparent;
+    cursor: pointer;
 }
 
 #studentForm input {
-  border: 3px solid #f7ef00;
-  outline: none;
+    border: 3px solid #f7ef00;
+    outline: none;
 }
 
 #studentForm input:focus {
-  border: 3px solid #ebf60e;
+    border: 3px solid #ebf60e;
 }
 
 #studentForm button:active {
-  border-color: #f2ff01;
+    border-color: #f2ff01;
 }
 
 .students {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px solid gray;
-  background-color: #b1c22d;
-  color: #2f2f2f;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid gray;
+    background-color: #b1c22d;
+    color: #2f2f2f;
+    border-radius: 15px;
 }
 
 .students div {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
 .students div * {
-  margin: 5px;
+    margin: 5px;
 }
 
 .random-number {
