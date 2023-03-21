@@ -215,15 +215,20 @@ header h1{
         width: 100%;
         margin-bottom: 20px;
         margin-top: 20px;
+        font-size: 10vw;
     }
     .main-home {
         display: block;
     }
 
     .front-buttons, .skills, .contact {
-        width: auto;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .skills a, .contact a {
+        font-size: 5vw;
     }
 }
 
@@ -243,7 +248,7 @@ header h1{
     }
 
     .skills, .contact {
-        width: 90px;
+        width: 20%;
     }
 
     .main-home {
@@ -265,9 +270,13 @@ header h1{
 
 @media only screen and (max-width: 390px) {
     .description {
-        width: 90%;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .description h1 {
+        font-size: 20vw;
     }
 
     .description h2 {
@@ -509,6 +518,10 @@ header h1{
 
     #toolbar h1 {
         font-size: 10vw;
+    }
+
+    #toolbar button {
+        font-size: 8vw;
     }
 
     .settings label {
