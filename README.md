@@ -1,7 +1,7 @@
 # Checklist for HTML5, CSS3 & JavaScript
 
-#####Required completed tasks: (Must be included)
-#####Additional development completed tasks (May be included)
+##### Required completed tasks: (Must be included)
+##### Additional development completed tasks (May be included)
 
 - Be able to create HTML5 pages and code with JavaScript (all webpages)
 - Style with CSS and implement one of the CSS3 effects (all webpages)
