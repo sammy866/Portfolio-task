@@ -11,6 +11,11 @@ function validateForm() {
       return false;
     }
 
+    if (lname == "") {
+      alert("Please fill out your last name");
+      return false;
+    }
+
     // Check if the email field is empty and meets the email format requirements
     // This regular expression matches any string that contains one or more characters, followed by an "@" symbol, followed by one or more characters, followed by a ".",
     // and then two or more characters (the domain)
