@@ -59,7 +59,25 @@
           <th>Number of Songs</th>
         </tr>
       </table>
+
+      <div id="ajax"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+      <button>Get External Content</button>
     </main>
     <script src="js/album.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#ajax").load("ajax.txt", function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success")
+              alert("External content loaded successfully!");
+            if (statusTxt == "error")
+              alert("Error: " + xhr.status + ": " + xhr.statusText);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
